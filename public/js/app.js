@@ -1,13 +1,4 @@
-console.log("client server site js")
-
-
-
-
-
-
-
-
- const weatherForm=document.querySelector('form')
+const weatherForm=document.querySelector('form')
 const search=document.querySelector('input')
 
 const messageOne=document.querySelector('#message-1')  //message-1 ki id fetch krne k liye
