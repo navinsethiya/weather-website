@@ -1,5 +1,7 @@
 const express=require("express")
 
+const port=process.env.PORT || 3000
+
 const path=require("path")
 
 const hbs=require("hbs")
@@ -9,6 +11,7 @@ const app=express()
 const geocode=require("./utils/geocode")
 
 const forecast=require("./utils/forecast")
+
 
 // console.log(path.join(__dirname))
 // console.log(path.join(__dirname,"../public"))
@@ -109,47 +112,12 @@ app.get('/weather',(req,res)=>{
  })
  })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 	console.log(req.query.address)
 // 	res.send({
 // 		location:"kota",
 // 		address:req.query.address
 // 	})
 // })
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -186,5 +154,5 @@ app.get('*',(req,res)=>{
 
 
 app.listen(3000,()=>{
-	console.log("server is starting...")
+	console.log("server is up on port " + port)
 })                   
