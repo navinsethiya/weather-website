@@ -14,8 +14,8 @@ const forecast=(latitude,longitude,callback)=> {
 			callback("Unable to find location, Try another search",undefined)
 
 		} else {
-
-			callback(undefined,(body.current.weather[0].description+" Out there. "  + " it is currently " + body.current.temp + " degree out. " + "There are  "+body.current.clouds+ "% clouds. " )
+			
+			callback(undefined,(body.current.weather[0].description+" out there. "  + " it is currently " + body.current.temp + " degree out. " +" The max temp is "+ body.daily[1].temp.max + " and min temp is "+ body.daily[1].temp.min +" There are  "+body.current.clouds+ "% clouds. " )
 				
 				
 				

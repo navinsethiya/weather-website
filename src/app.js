@@ -61,11 +61,11 @@ app.get('/help',(req,res) =>{
 	})
 })
 
-app.get('/game',(req,res) =>{
-	res.send(
-		{link:"http://facebook.com/profile.php?=73322363",
-		 you:"The above link is your facebook link and i know that because i am Hacker ...ohhhhhhhhhhhhhhohhhhhhhhhhhh "})
-})
+// app.get('/game',(req,res) =>{
+// 	res.send(
+// 		{link:"http://facebook.com/profile.php?=73322363",
+// 		 you:"The above link is your facebook link and i know that because i am Hacker ...ohhhhhhhhhhhhhhohhhhhhhhhhhh "})
+// })
 
 // we create the endpoints of url
 // 1.
